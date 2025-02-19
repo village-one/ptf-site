@@ -36,7 +36,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 5cf4a4ac-85fa-4da7-891a-d5d9bf1bf1d4
+            fieldUid: 5cf4a4ac-85fa-4da7-891a-d5d9bf1bf1d4 # Main Image - Image - Image
             handle: null
             includeInCards: true
             instructions: null
@@ -51,7 +51,7 @@ fieldLayouts:
             width: 25
           -
             elementCondition: null
-            fieldUid: 9cc566a2-cf3f-44d6-82d7-7882f61e176e
+            fieldUid: 9cc566a2-cf3f-44d6-82d7-7882f61e176e # Main Image - Image - Caption
             handle: null
             includeInCards: true
             instructions: null

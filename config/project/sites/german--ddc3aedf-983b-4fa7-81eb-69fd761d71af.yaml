@@ -1,9 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
 enabled: true
-handle: default
+handle: german
 hasUrls: true
-language: en-US
-name: 'Primary Site'
+language: de-DE
+name: German
 primary: true
 siteGroup: c0e7400b-5611-4a34-bc52-4cd0edc31e41 # Sites
 sortOrder: 1

@@ -16,7 +16,7 @@ previewTargets:
         - '{url}'
 propagationMethod: all
 siteSettings:
-  ddc3aedf-983b-4fa7-81eb-69fd761d71af: # Primary Site
+  ddc3aedf-983b-4fa7-81eb-69fd761d71af: # German
     enabledByDefault: true
     hasUrls: true
     template: blog/index
