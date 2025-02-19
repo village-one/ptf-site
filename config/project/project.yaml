@@ -1,4 +1,4 @@
-dateModified: 1737892030
+dateModified: 1739958470
 elementSources:
   craft\elements\Entry:
     -
@@ -46,17 +46,15 @@ fs:
       path: '@webroot/uploads'
     type: craft\fs\Local
     url: '@web/uploads'
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
     0d857c68-7bb1-4ce7-b61f-671446aa8bb3: SEO # SEO
     2b86894c-5b98-44d4-8ed6-88b2c8b5e601: 'Blog Index' # Blog Index
     3bde5cb4-3323-4862-906f-40053b1122bc: 'Main Image' # Main Image
+    5cf4a4ac-85fa-4da7-891a-d5d9bf1bf1d4: 'Main Image - Image - Image' # Main Image - Image - Image
     6fa1e10a-d063-4c10-a955-f1b3eda7e7ef: Standard # Standard
     9c0f58c4-4b28-4aca-b80d-3b370bc38f9e: 'Next Reads' # Next Reads
+    9cc566a2-cf3f-44d6-82d7-7882f61e176e: 'Main Image - Image - Caption' # Main Image - Image - Caption
     13a0aaca-3bd8-4653-b163-69738ce277c3: Text # Text
     28f95d3d-986f-41ed-b23b-c2f3b747c2eb: Homepage # Homepage
     34dc108f-02bd-42cb-9481-0693c7bc32b4: 'Tracking Head' # Tracking Head
@@ -73,14 +71,14 @@ meta:
     c8c2dcfa-75cb-423f-9565-b550807d0e7e: 'Resize: width 1500px' # Resize: width 1500px
     c4438391-90e5-49b1-93bd-6fcbbd3aed62: Simple # Simple
     d5397ea9-1d37-4f12-bf41-46082d130bd8: Image # Image
-    ddc3aedf-983b-4fa7-81eb-69fd761d71af: 'Primary Site' # Primary Site
+    ddc3aedf-983b-4fa7-81eb-69fd761d71af: German # German
     ed187804-9da6-4b7d-b983-1c751ac7a3ab: 'Tracking Body' # Tracking Body
     fb0276f2-1481-401a-b813-05bac05b0218: Settings # Settings
 plugins:
   blitz:
     edition: standard
     enabled: true
-    licenseKey: BK2APMUR5IISO1AREFMXBFBA
+    licenseKey: E3FLHMS038ASYZCMOT1N7IBT
     schemaVersion: 5.9.0
     settings:
       apiKey: ''
@@ -175,7 +173,7 @@ plugins:
   retour:
     edition: standard
     enabled: true
-    licenseKey: AHZZ33ZB08NYPGJPMRS1891F
+    licenseKey: ZVLSZ9INU5Z8UTHLZAJDQRX6
     schemaVersion: 3.0.12
     settings:
       alwaysStripQueryString: false
@@ -198,7 +196,7 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: K35HEVF7SYQKYMRAMW7EVV4N
+    licenseKey: LXESUA4UFA479FN3T6U5KW1J
     schemaVersion: 3.0.12
     settings:
       addHrefLang: true
@@ -250,9 +248,9 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
 system:
-  edition: solo
+  edition: pro
   live: true
-  name: 'Project Name'
+  name: 'Prototype Fund'
   retryDuration: null
   schemaVersion: 5.6.0.2
   timeZone: Europe/Berlin
