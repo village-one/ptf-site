@@ -1,0 +1,13 @@
+{% extends "_layouts/layout.twig" %}
+
+{% set text %}
+  <h1>404!</h1>
+  <p>Page not found</p>
+  <p><a class="button" href="{{ url("/") }}">Return to homepage</a></p>
+{% endset %}
+
+{% block content %}
+  <article class="max-w-4xl mx-auto p-2 md:p-4 lg:p-6">
+    {% include "_rich-text/standard" with { text: text } only %}
+  </article>
+{% endblock %}

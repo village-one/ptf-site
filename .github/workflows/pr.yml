@@ -1,0 +1,21 @@
+name: Pull Request
+
+on: pull_request
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checking out git
+        uses: actions/checkout@v4
+      - name: Setting up node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+      - name: Lint
+        env:
+          CI: true
+        run: |
+          npm install
+          npm run lint

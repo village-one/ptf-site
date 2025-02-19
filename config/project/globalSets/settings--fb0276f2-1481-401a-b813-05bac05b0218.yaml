@@ -1,0 +1,42 @@
+fieldLayouts:
+  06d46b66-fa63-49d2-8e73-7de1a07d2259:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 34dc108f-02bd-42cb-9481-0693c7bc32b4 # Tracking Head
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb8ce2b7-73b8-4b25-a741-9c18f5943eac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ed187804-9da6-4b7d-b983-1c751ac7a3ab # Tracking Body
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 63e8feb6-5b17-4e6c-8581-4a4dc7735b66
+            userCondition: null
+            warning: null
+            width: 100
+        name: Tracking
+        uid: 36c94df3-2d11-499f-855d-4d374b6bc035
+        userCondition: null
+handle: settings
+name: Settings
+sortOrder: 1

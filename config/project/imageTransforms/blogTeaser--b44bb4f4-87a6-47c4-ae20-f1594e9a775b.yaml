@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: blogTeaser
+height: 450
+interlace: none
+mode: crop
+name: 'Blog Teaser'
+position: center-center
+quality: null
+upscale: false
+width: 600

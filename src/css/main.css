@@ -1,0 +1,139 @@
+@import url("webfonts.css") layer(base);
+
+@import "tailwindcss";
+
+@custom-variant dark (:is(.dark &):not(.print &));
+
+@theme {
+  --color-*: initial;
+  --color-black: #000000;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #9ca3af;
+  --color-gray-400: #6b7280;
+  --color-gray: #4b5563;
+  --color-gray-500: #4b5563;
+  --color-gray-600: #374151;
+  --color-gray-700: #111827;
+  --color-gray-800: #030712;
+  --color-gray-900: #030712;
+  --color-gray-950: #030712;
+  --color-white: #ffffff;
+
+  --breakpoint-xxs: 420px;
+  --breakpoint-xs: 576px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 2000px;
+  --breakpoint-4xl: 2560px;
+
+  --text-head-88: calc(88 / 16 * 1rem);
+  --text-head-88--line-height: 1.2;
+  --text-head-64: calc(64 / 16 * 1rem);
+  --text-head-64--line-height: 1.2;
+  --text-head-56: calc(56 / 16 * 1rem);
+  --text-head-56--line-height: 1.2;
+  --text-head-48: calc(48 / 16 * 1rem);
+  --text-head-48--line-height: 1.2;
+  --text-head-40: calc(40 / 16 * 1rem);
+  --text-head-40--line-height: 1.2;
+  --text-head-32: calc(32 / 16 * 1rem);
+  --text-head-32--line-height: 1.2;
+
+  --text-body-24: calc(24 / 16 * 1rem);
+  --text-body-24--line-height: 1.5;
+  --text-body-20: calc(20 / 16 * 1rem);
+  --text-body-20--line-height: 1.5;
+  --text-body-18: calc(18 / 16 * 1rem);
+  --text-body-18--line-height: 1.5;
+  --text-body-16: calc(16 / 16 * 1rem);
+  --text-body-16--line-height: 1.5;
+  --text-body-14: calc(14 / 16 * 1rem);
+  --text-body-14--line-height: 1.5;
+  --text-body-12: calc(12 / 16 * 1rem);
+  --text-body-12--line-height: 1.5;
+
+  --text-ui-20: calc(20 / 16 * 1rem);
+  --text-ui-20--line-height: 1;
+  --text-ui-18: calc(18 / 16 * 1rem);
+  --text-ui-18--line-height: 1;
+  --text-ui-16: calc(16 / 16 * 1rem);
+  --text-ui-16--line-height: 1;
+  --text-ui-14: calc(14 / 16 * 1rem);
+  --text-ui-14--line-height: 1;
+
+  --font-sans: "Inter", Helvetica, Arial, sans-serif;
+  --spacing: 8px;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+
+  img,
+  picture {
+    @apply block max-w-full;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    @apply accent-gray dark:accent-gray-200;
+    font: inherit;
+  }
+
+  a:not(.button) {
+    @apply underline-offset-2;
+  }
+
+  :target {
+    @apply scroll-my-14 md:scroll-my-36;
+  }
+
+  :focus-visible {
+    @apply outline-hidden ring-8 dark:ring-4 ring-gray dark:ring-gray-200;
+  }
+
+  @media print {
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+  }
+}
+
+.text-link {
+  @apply underline hover:text-gray;
+}
+
+.button {
+  @apply relative leading-none inline-block align-middle overflow-hidden whitespace-nowrap text-ellipsis max-w-full text-white rounded-3xl mr-1.5 px-2.5 py-1.25 hover:bg-gray-700 decoration-0 active:bg-gray-800 dark:text-gray-700 dark:bg-gray-400 dark:hover:bg-gray-200 dark:active:bg-gray-100;
+}

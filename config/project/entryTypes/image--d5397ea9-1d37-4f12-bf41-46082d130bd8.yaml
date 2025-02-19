@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  32b8b6ef-dd58-471a-8b72-182c8f00a037:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 18222ee3-6b69-47b0-ab68-7266c8340d1d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5cf4a4ac-85fa-4da7-891a-d5d9bf1bf1d4
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Image
+            providesThumbs: true
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 46eef7b7-6005-4ebe-91a3-75d20b0025c0
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 9cc566a2-cf3f-44d6-82d7-7882f61e176e
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Caption
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0dc97059-a2e4-45db-997b-f0dc5ea6450a
+            userCondition: null
+            warning: null
+            width: 75
+        name: Content
+        uid: c31c048a-d0dd-492f-b1c7-0fefa9051287
+        userCondition: null
+handle: image
+hasTitleField: false
+icon: image
+name: Image
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

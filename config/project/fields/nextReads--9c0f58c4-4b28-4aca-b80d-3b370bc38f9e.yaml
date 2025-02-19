@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: string
+handle: nextReads
+instructions: 'Leave empty to always display the latest three articles automatically'
+name: 'Next Reads'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 3
+  minRelations: null
+  selectionLabel: 'Add entries as next reads'
+  showSiteMenu: true
+  sources:
+    - 'section:375cd22a-99b6-4667-8ca6-caf2572459ed' # Blog
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

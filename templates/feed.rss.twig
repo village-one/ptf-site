@@ -1,0 +1,59 @@
+{% apply spaceless %}
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ seomatic.site.siteName }}</title>
+    <link>{{ siteUrl }}</link>
+    <atom:link href="{{ url(craft.app.request.pathInfo) }}" rel="self" type="application/rss+xml" />
+    <description>{{ seomatic.site.identity.genericDescription }}</description>
+    <language>{{ craft.app.getSites().getCurrentSite().locale }}</language>
+    <pubDate>{{ now|rss }}</pubDate>
+    <lastBuildDate>{{ now|rss }}</lastBuildDate>
+
+    {% set entries = craft.entries().section('blog').with(["mainImage.image:image", "nextReads"]).limit(10).all() %}
+
+    {% for entry in entries %}
+      <item>
+        <title>{{ entry.title }}</title>
+        <link>{{ entry.url }}</link>
+        <pubDate>{{ entry.postDate|rss }}</pubDate>
+        <author>{{ entry.author.email }} ({{ seomatic.site.siteName }})</author>
+        <guid>{{ entry.url }}</guid>
+        <description>
+          {% set nextReads = entry.nextReads %}
+
+          {% if entry.mainImage|length %}
+            {% set figure = entry.mainImage[0] %}
+            <![CDATA[
+              <figure>
+                <img src="{{ figure.image[0].getUrl("w1000") }}" alt="{{ figure.image[0].alt }}">
+                {% if figure.caption|length %}
+                  <figcaption>{{ figure.caption|raw }}</figcaption>
+                {% endif %}
+              </figure>
+            ]]>
+          {% endif %}
+
+          <![CDATA[
+              {% include "_rich-text/rss" with {text: entry.text } only %}
+          ]]>
+
+          {% if nextReads|length %}
+            <![CDATA[
+              <hr>
+              <p><strong>{{"More articles"|t}}</strong></p>
+            ]]>
+            <![CDATA[
+              <ul>
+                {% for article in nextReads %}
+                  <li><a href="{{ article.getUrl() }}">{{ article.title }}</a></li>
+                {% endfor %}
+              </ul>
+            ]]>
+          {% endif %}
+        </description>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
+{% endapply %}

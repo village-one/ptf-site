@@ -1,0 +1,10 @@
+
+<div>
+  {{ text|retcon([
+    ["removeEmpty", "p"],
+    ["attr", "h1, h2, h3, h4, h5, h6", { class: "font-bold text-pretty mb-[1em]"}, false],
+    ["attr", "p", { class: "mb-[1em] last:mb-0"}, false],
+    ["attr", "a", { class: "text-link"}, false],
+    ["attr", ".button.text-link", { class: "button" }],
+  ])|raw }}
+</div>

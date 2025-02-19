@@ -1,0 +1,11 @@
+{% macro sizes(size) %}{% apply spaceless %}
+  {% set sizes = {
+    textCol: "(min-width: 1024px) 800px, 100vw"
+  } %}
+  {{ sizes[size] }}
+{% endapply %}{% endmacro %}
+
+{% macro srcSet(image) %}{% apply spaceless %}
+  {% set imageSizes = [500, 1000, 1500, 2000] %}
+  {{ imageSizes|reduce((carry, v) => "#{carry}, #{image.getUrl('w'~v)} #{v}w", "") }}
+{% endapply %}{% endmacro %}

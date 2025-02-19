@@ -1,0 +1,39 @@
+{% extends "_layouts/layout.twig" %}
+
+{% set headline = entry.title %}
+{% set text = entry.text %}
+
+{% set mainImage = entry.mainImage.with(["image:image"]).all() %}
+{% set hasImage = false %}
+{% if mainImage|length %}
+  {% set figure = {
+    image: mainImage[0].image[0],
+    caption: mainImage[0].caption
+  } %}
+  {% set hasImage = true %}
+{% endif %}
+{% set authorName = entry.author.name %}
+{% set postDate = entry.postDate|date("short") %}
+
+{% set nextReads = entry.nextReads.with("mainImage.image:image").all() %}
+{% if nextReads|length == 0 %}
+  {% set nextReads =  craft.entries.section('blog').with(["mainImage.image:image"]).id('not ' ~ entry.id).limit(3).all() %}
+{% endif %}
+
+
+{% block content %}
+  <article>
+    {% include "_rich-text/standard" with { text: "<h1>#{headline}</h1>" } only %}
+    <p class="mt-2 mb-4">Written by {{authorName}} on {{ postDate }}</p>
+
+    {% if hasImage %}
+      <div class="my-4">
+        {% include "_modules/figure" with { figure: figure, size: "textCol" } only %}
+      </div>
+    {% endif %}
+
+    {% include "_rich-text/standard" with { text: text } only %}
+  </article>
+
+  {% include "blog/_modules/next-reads" with { nextReads: nextReads } %}
+{% endblock %}

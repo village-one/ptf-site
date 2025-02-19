@@ -1,0 +1,21 @@
+columnSuffix: xlohqkic
+handle: caption
+instructions: null
+name: 'Main Image - Image - Caption'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: c4438391-90e5-49b1-93bd-6fcbbd3aed62 # Simple
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

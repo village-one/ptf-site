@@ -1,0 +1,15 @@
+{% import '_macros' as macros %}
+
+{% set image = figure.image %}
+{% set caption = figure.caption %}
+{% set hasCaption = caption|length %}
+{% set size = size|default("textCol") %}
+
+<figure>
+  <img class="w-full" src="{{ image.getUrl("w1000") }}" alt="{{ image.alt }}" sizes="{{ macros.sizes(size) }}" srcset="{{ macros.srcset(image) }}">
+  {% if hasCaption %}
+    <figcaption class="mt-1">
+      {% include "_rich-text/simple" with { text: caption } only %}
+    </figcaption>
+  {% endif %}
+</figure>

@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: mainImage
+instructions: null
+name: 'Main Image'
+searchable: false
+settings:
+  createButtonLabel: 'Add image'
+  entryTypes:
+    - d5397ea9-1d37-4f12-bf41-46082d130bd8 # Image
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,76 @@
+fieldLayouts:
+  5814abf4-bd59-4f7c-bab9-9fe44aa69287:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cc203093-39cb-4c07-9f5a-4fde053af5cf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 13a0aaca-3bd8-4653-b163-69738ce277c3 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e23e9aa5-9e25-4e76-8365-ef32ceae4547
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7b70b50a-c718-421c-9f01-c898f00d7d4f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0d857c68-7bb1-4ce7-b61f-671446aa8bb3 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ce454fad-b946-4695-bb64-ef63434e1938
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 68e1e41a-cdb5-4605-8c4d-9213f222c621
+        userCondition: null
+handle: homepage
+hasTitleField: true
+name: Homepage
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,9 @@
+headingLevels: false
+listPlugin: ''
+name: Simple
+toolbar:
+  - sourceEditing
+  - '|'
+  - bold
+  - italic
+  - link

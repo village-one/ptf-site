@@ -1,0 +1,48 @@
+name: Deploy to production
+
+on:
+  push:
+    branches: production
+
+jobs:
+  fortrabbit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checking out git
+        uses: actions/checkout@v4
+      - name: Prepare repository
+        run: git checkout "${GITHUB_REF:11}"
+      - name: Setup SSH key
+        run: |
+          mkdir -p $HOME/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > $HOME/.ssh/deploy_key
+          chmod 600 $HOME/.ssh/deploy_key
+      - name: Add fortrabbit git remote
+        run: git remote add fortrabbit ${{ secrets.APP_NAME_PRODUCTION }}@${{ secrets.HOST }}:${{ secrets.APP_NAME_PRODUCTION }}.git
+      - name: Push to fortrabbit
+        run: GIT_SSH_COMMAND='ssh -i $HOME/.ssh/deploy_key -o StrictHostKeyChecking=no' git push -u fortrabbit "${GITHUB_REF:11}":main
+      - name: Setting up node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+      - name: Install node packages
+        run: npm install
+      - name: Create assets
+        run: npm run build
+      - name: Sync assets to fortrabbit
+        run: |
+          source="web/static/dist/*"
+          target="~/web/static/dist"
+          sh -c "rsync -av --delete-after -e 'ssh -i $HOME/.ssh/deploy_key -o StrictHostKeyChecking=no' ${source} --rsync-path='mkdir -p ${target} && rsync' ${{ secrets.APP_NAME_PRODUCTION }}@${{ secrets.HOST }}:${target}"
+      - name: Flush fortrabbit blitz cache
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.APP_NAME_PRODUCTION }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          command_timeout: 30m
+          script: |
+            php craft blitz/cache/refresh
+      - name: Delete SSH key
+        run: rm $HOME/.ssh/deploy_key
