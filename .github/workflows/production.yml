@@ -11,8 +11,9 @@ jobs:
     steps:
       - name: Checking out git
         uses: actions/checkout@v4
-      - name: Prepare repository
-        run: git checkout "${GITHUB_REF:11}"
+        with:
+          ref: production
+          fetch-depth: 0
       - name: Setup SSH key
         run: |
           mkdir -p $HOME/.ssh
