@@ -135,5 +135,5 @@
 }
 
 .button {
-  @apply relative leading-none inline-block align-middle overflow-hidden whitespace-nowrap text-ellipsis max-w-full text-white rounded-3xl mr-1.5 px-2.5 py-1.25 hover:bg-gray-700 decoration-0 active:bg-gray-800 dark:text-gray-700 dark:bg-gray-400 dark:hover:bg-gray-200 dark:active:bg-gray-100;
+  @apply relative leading-none inline-block align-middle overflow-hidden whitespace-nowrap text-ellipsis max-w-full text-white rounded-3xl mr-1.5 px-2.5 py-1.25 bg-gray-500 hover:bg-gray-700 decoration-0 active:bg-gray-800 dark:text-gray-700 dark:bg-gray-400 dark:hover:bg-gray-200 dark:active:bg-gray-100;
 }
