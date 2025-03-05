@@ -135,7 +135,7 @@ A few resources that were used in setting this up:
 
 ## CMS and plugins
 
-We use Craft CMS 4. In Craft you configure all data structures visually in the CMS, which then get written to [the project config files](https://craftcms.com/docs/4.x/project-config.html), which are committed to the repo. Whenever somebody commits structural changes to the repo and somebody else pulls them, the CMS will prompt you to review and apply them (essentially a database migration). This can be done with one button click in the interface, but usually it’s safer to do it on the console. You can use ddev to access the [Craft CLI](https://craftcms.com/docs/4.x/console-commands.html), like so:
+We use Craft CMS 5. In Craft you configure all data structures visually in the CMS, which then get written to [the project config files](https://craftcms.com/docs/5.x/system/project-config.html), which are committed to the repo. Whenever somebody commits structural changes to the repo and somebody else pulls them, the CMS will prompt you to review and apply them (essentially a database migration). This can be done with one button click in the interface, but usually it’s safer to do it on the console. You can use ddev to access the [Craft CLI](https://craftcms.com/docs/4.x/console-commands.html), like so:
 
 For a list of commands:
 
