@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db455ec8efb930c3040d6f866c148b95",
+    "content-hash": "096e28cf54152a7f3c89e2ae293d572c",
     "packages": [
         {
             "name": "amphp/amp",
@@ -1207,11 +1207,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.6.7",
+            "version": "5.6.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/ae203ff5926e3f00eff4fd7f75413e95a0fe68aa",
-                "reference": "ae203ff5926e3f00eff4fd7f75413e95a0fe68aa",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/72064b36c095def517b68141ecab6169a2499b12",
+                "reference": "72064b36c095def517b68141ecab6169a2499b12",
                 "shasum": ""
             },
             "require": {
@@ -1311,7 +1311,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2025-02-18T19:02:31+00:00"
+            "time": "2025-03-05T00:19:27+00:00"
         },
         {
             "name": "craftcms/feed-me",
@@ -3445,11 +3445,11 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "5.0.7",
+            "version": "5.0.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/12e254e525dcce4b3405d9fa52c9131943ad0298",
-                "reference": "12e254e525dcce4b3405d9fa52c9131943ad0298",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/6e312bb10dc9ed12d5afb14d95be7ea8b20d620c",
+                "reference": "6e312bb10dc9ed12d5afb14d95be7ea8b20d620c",
                 "shasum": ""
             },
             "require": {
@@ -3493,7 +3493,7 @@
                 "issues": "https://nystudio107.com/plugins/retour/support",
                 "source": "https://github.com/nystudio107/craft-retour"
             },
-            "time": "2025-02-12T20:48:00+00:00"
+            "time": "2025-03-05T22:06:13+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -4492,11 +4492,11 @@
         },
         {
             "name": "putyourlightson/craft-blitz",
-            "version": "5.9.10",
+            "version": "5.9.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/48fb03ee3bda2613d6875449b85d6115a3bc387e",
-                "reference": "48fb03ee3bda2613d6875449b85d6115a3bc387e",
+                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/a7dc7b3d1f547e141d165c71c9ad6290a9dc2792",
+                "reference": "a7dc7b3d1f547e141d165c71c9ad6290a9dc2792",
                 "shasum": ""
             },
             "require": {
@@ -4540,7 +4540,7 @@
                 "source": "https://github.com/putyourlightson/craft-blitz",
                 "issues": "https://github.com/putyourlightson/craft-blitz/issues"
             },
-            "time": "2025-01-30T17:34:16+00:00"
+            "time": "2025-03-06T15:13:54+00:00"
         },
         {
             "name": "putyourlightson/craft-sprig-core",
