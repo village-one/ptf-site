@@ -17,9 +17,11 @@
 {% set teamMembers = entry.projectTeamMembers %}
 {% set categories = entry.projectCategories %}
 {% set links = entry.projectLinks %}
+{% set status = entry.projectStatus[0].label %}
 
 {% block content %}
   <article>
+    {% include "_rich-text/standard" with { text: "<em>Project Status: #{status}</em>" } only %}
     {% include "_rich-text/standard" with { text: "<em>Round: #{round}</em>" } only %}
 
     {% for category in categories %}
