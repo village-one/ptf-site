@@ -1,6 +1,6 @@
 {% extends "_layouts/layout.twig" %}
 
-{% set articlesQuery = craft.entries.section("blog").with(["mainImage.image:image"]).limit(6) %}
+{% set articlesQuery = craft.entries.section("blog").with(["mainImage.image:image"]).limit(15) %}
 {% paginate articlesQuery as pagination, articles %}
 
 {% block content %}
