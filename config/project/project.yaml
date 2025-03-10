@@ -1,4 +1,4 @@
-dateModified: 1741605040
+dateModified: 1741612754
 elementSources:
   craft\elements\Entry:
     -
@@ -53,6 +53,7 @@ meta:
     3bde5cb4-3323-4862-906f-40053b1122bc: 'Main Image' # Main Image
     5cf4a4ac-85fa-4da7-891a-d5d9bf1bf1d4: 'Main Image - Image - Image' # Main Image - Image - Image
     6fa1e10a-d063-4c10-a955-f1b3eda7e7ef: Standard # Standard
+    7eb26dd5-1c10-45d1-a16b-85a148e4bf8a: 'Project Index' # Project Index
     9c0f58c4-4b28-4aca-b80d-3b370bc38f9e: 'Next Reads' # Next Reads
     9cc566a2-cf3f-44d6-82d7-7882f61e176e: 'Main Image - Image - Caption' # Main Image - Image - Caption
     13a0aaca-3bd8-4653-b163-69738ce277c3: Text # Text
