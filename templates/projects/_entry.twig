@@ -1,0 +1,51 @@
+{% extends "_layouts/layout.twig" %}
+
+{% set headline = entry.title %}
+{% set claim = entry.claim %}
+{% set text = entry.text %}
+
+{% set mainImage = entry.mainImage.with(["image:image"]).all() %}
+{% set hasImage = false %}
+{% if mainImage|length %}
+  {% set figure = {
+    image: mainImage[0].image[0],
+    caption: mainImage[0].caption
+  } %}
+  {% set hasImage = true %}
+{% endif %}
+{% set round = entry.round %}
+{% set teamMembers = entry.projectTeamMembers %}
+{% set categories = entry.projectCategories %}
+{% set links = entry.projectLinks %}
+
+{% block content %}
+  <article>
+    {% include "_rich-text/standard" with { text: "<em>Round: #{round}</em>" } only %}
+
+    {% for category in categories %}
+      <em>#{{ category }}</em>
+    {% endfor %}
+
+    {% include "_rich-text/standard" with { text: "<h1>#{headline}</h1>" } only %}
+    {% include "_rich-text/standard" with { text: "<em>#{claim}</em>" } only %}
+    <p class="mt-2 mb-4">
+      <strong>Team Members:</strong>
+      {{teamMembers}}
+    </p>
+
+    <p class="mt-2 mb-4">
+      <strong>Links:</strong>
+      {% for link in links %}
+        <a href={{link.linkURL}}>{{ link.name }}</a>
+      {% endfor %}
+    </p>
+
+    {% if hasImage %}
+      <div class="my-4">
+        {% include "_modules/figure" with { figure: figure, size: "textCol" } only %}
+      </div>
+    {% endif %}
+
+    {% include "_rich-text/standard" with { text: text } only %}
+  </article>
+{% endblock %}
