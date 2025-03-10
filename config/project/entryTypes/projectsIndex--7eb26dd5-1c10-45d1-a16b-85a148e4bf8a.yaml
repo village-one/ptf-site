@@ -60,10 +60,10 @@ fieldLayouts:
         name: SEO
         uid: ee658dbc-dd65-4edd-9995-85914058b4e5
         userCondition: null
-handle: projectIndex
+handle: projectsIndex
 hasTitleField: true
 icon: null
-name: 'Project Index'
+name: 'Projects Index'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
