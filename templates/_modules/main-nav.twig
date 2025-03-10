@@ -1,8 +1,15 @@
 <header class="mb-4 md:mb-6 lg:mb-8">
   <nav class="flex">
     <ul class="flex flex-row gap-2">
-      <li><a class="text-link" href="{{ url("/") }}">Home</a></li>
-      <li><a class="text-link" href="{{ url("blog") }}">Blog</a></li>
+      <li>
+        <a class="text-link" href="{{ url("/") }}">Home</a>
+      </li>
+      <li>
+        <a class="text-link" href="{{ url("blog") }}">Blog</a>
+      </li>
+      <li>
+        <a class="text-link" href="{{ url("projects") }}">Projects</a>
+      </li>
     </ul>
     <display-toggle class="ml-auto hidden" data-light-mode-label="Switch to light mode" data-dark-mode-label="Switch to dark mode">
       <button class="text-link"></button>
