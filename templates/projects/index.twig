@@ -1,0 +1,16 @@
+{% extends "_layouts/layout.twig" %}
+
+{% set projectsQuery = craft.entries.section("projects").with(["mainImage.image:image"]).limit(20) %}
+{% paginate projectsQuery as pagination, projects %}
+
+  {% block content %}
+    {% include "_rich-text/standard" with { text: "<h1>Our projects</h1>" } only %}
+    <div class="my-4">
+      {% if projects|length %}
+        {% include "projects/_modules/teasers-list" with { projects: projects } only %}
+      {% else %}
+        {% include "_rich-text/standard" with { text: "<p>No entries yet. Create some in the CMS!</p>" } only %}
+      {% endif %}
+    </div>
+    {% include "projects/_modules/pagination" with { pagination: pagination } only %}
+  {% endblock %}

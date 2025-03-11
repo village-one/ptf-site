@@ -1,0 +1,12 @@
+{% set fallbackImageUrl = "https://prototypefund.de/wp-content/themes/prototypefund-theme-a11y/library/images/prototypefund-project-default-16-9.png" %}
+{% set imageUrl = (entry.mainImage[0].image[0].getUrl("blogTeaser"))|default(fallbackImageUrl) %}
+
+<article class="col-span-3 md:col-span-1">
+  <a class="block" href="{{ entry.getUrl() }}">
+    <img class="mb-1 w-full aspect-4/3 bg-gray-500" src="{{ imageUrl }}">
+
+    <h3 class="text-body-24 font-bold mb-1">{{ entry.title }}</h3>
+    <h4 class="text-body-16 font-bold mb-1">{{ entry.claim }}</h4>
+    <p>{{ entry.text|striptags|truncate(120)|raw }}</p>
+  </a>
+</article>

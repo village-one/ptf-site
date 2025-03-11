@@ -1,0 +1,73 @@
+color: null
+fieldLayouts:
+  92f1f032-2ae3-47f0-bc5f-39bd85ec3d06:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-10T13:17:35+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a569f315-7313-4729-9e8d-014cf040c4e2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7c4654da-4cec-43ca-bbac-5888861faf3e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-10T13:19:14+00:00'
+            elementCondition: null
+            fieldUid: 0d857c68-7bb1-4ce7-b61f-671446aa8bb3 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f73103fa-0e43-44d5-aad3-884cef26300f
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: ee658dbc-dd65-4edd-9995-85914058b4e5
+        userCondition: null
+handle: projectsIndex
+hasTitleField: true
+icon: null
+name: 'Projects Index'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

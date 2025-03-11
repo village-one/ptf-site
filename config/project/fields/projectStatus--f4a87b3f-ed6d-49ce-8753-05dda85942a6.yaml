@@ -1,0 +1,44 @@
+columnSuffix: null
+handle: projectStatus
+instructions: null
+name: 'Project Status'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'In Arbeit'
+        -
+          - value
+          - workInProgress
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Im Einsatz'
+        -
+          - value
+          - inUsage
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Abgeschlossen
+        -
+          - value
+          - completed
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MultiSelect
