@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.12",
-    "postcss": "^8.5.1",
+    "postcss": "^8.5.3",
     "prettier": "^3.4.2",
     "tailwindcss": "^4.0.12",
     "vite": "^6.0.11",
