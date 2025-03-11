@@ -37,7 +37,7 @@ jobs:
           target="~/web/static/dist"
           sh -c "rsync -av --delete-after -e 'ssh -i $HOME/.ssh/deploy_key -o StrictHostKeyChecking=no' ${source} --rsync-path='mkdir -p ${target} && rsync' ${{ secrets.APP_NAME_PRODUCTION }}@${{ secrets.HOST }}:${target}"
       - name: Flush fortrabbit blitz cache
-        uses: appleboy/ssh-action@v1.2.1
+        uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.APP_NAME_PRODUCTION }}
