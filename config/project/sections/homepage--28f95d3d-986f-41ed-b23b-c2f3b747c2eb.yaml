@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 711863fc-e341-4c43-b45b-dc33dc3c9c2b # Homepage
+  -
+    uid: 711863fc-e341-4c43-b45b-dc33dc3c9c2b # Homepage
 handle: homepage
 maxAuthors: 1
 name: Homepage
@@ -14,8 +15,16 @@ previewTargets:
       -
         - urlFormat
         - '{url}'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
+  af0bbe1c-3613-4775-8a01-965b68d4e56e: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
   ddc3aedf-983b-4fa7-81eb-69fd761d71af: # German
     enabledByDefault: true
     hasUrls: true

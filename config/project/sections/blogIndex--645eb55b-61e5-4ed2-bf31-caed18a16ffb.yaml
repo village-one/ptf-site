@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 2b86894c-5b98-44d4-8ed6-88b2c8b5e601 # Blog Index
+  -
+    uid: 2b86894c-5b98-44d4-8ed6-88b2c8b5e601 # Blog Index
 handle: blogIndex
 maxAuthors: 1
 name: 'Blog Index'
@@ -14,8 +15,16 @@ previewTargets:
       -
         - urlFormat
         - '{url}'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
+  af0bbe1c-3613-4775-8a01-965b68d4e56e: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: blog/index
+    uriFormat: blog
   ddc3aedf-983b-4fa7-81eb-69fd761d71af: # German
     enabledByDefault: true
     hasUrls: true
