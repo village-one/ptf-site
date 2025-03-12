@@ -1,4 +1,4 @@
-dateModified: 1741796282
+dateModified: 1741804012
 elementSources:
   craft\elements\Entry:
     -
@@ -82,6 +82,7 @@ meta:
     504f909d-20af-4a66-b4a5-46c966689b30: 'Resize: width 1000px' # Resize: width 1000px
     645eb55b-61e5-4ed2-bf31-caed18a16ffb: 'Blog Index' # Blog Index
     3440d13a-36a4-4c7c-9db6-14ea4be7238f: Round # Round
+    53364b16-adc8-4b34-802f-054c272771c6: 'Projects Index' # Projects Index
     586087db-4dd7-43ba-929b-b3f7cef02ff8: 'Resize: width 0500px' # Resize: width 0500px
     711863fc-e341-4c43-b45b-dc33dc3c9c2b: Homepage # Homepage
     67373325-a234-485a-a635-26dee1e7f325: 'Project Links' # Project Links
