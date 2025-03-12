@@ -4,7 +4,7 @@
 {% paginate articlesQuery as pagination, articles %}
 
 {% block content %}
-  {% include "_rich-text/standard" with { text: "<h1>Our blog</h1>" } only %}
+  {% include "_rich-text/standard" with { text: "<h1>#{ 'Our blog'|t }</h1>" } only %}
   <div class="my-4">
     {% if articles|length %}
       {% include "blog/_modules/teasers-list" with { articles: articles } only %}
@@ -12,5 +12,5 @@
       {% include "_rich-text/standard" with { text: "<p>No entries yet. Create some in the CMS!</p>" } only %}
     {% endif %}
   </div>
-  {% include "blog/_modules/pagination" with { pagination: pagination } only %}
+  {% include "_modules/pagination" with { pagination: pagination } only %}
 {% endblock %}

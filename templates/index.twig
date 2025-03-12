@@ -3,9 +3,9 @@
 {% set text = entry.text %}
 
 {% set defaultText %}
-  <h1>Welcome!</h1>
-  <p>This is a pre-configured <a href="https://www.craftcms.com">Craft CMS</a> installation, created by <a href="https://www.village.one">Village One</a>. Please check out the Readme in the project root or on Github for first steps.</p>
-  <p><a class="button" href="https://github.com/village-one/ptf-site/blob/main/README.md">Open Readme on GitHub</a></p>
+  <h1>{{ "Welcome!"|t }}</h1>
+  <p>{{ "This is a pre-configured <a href='https://www.craftcms.com'>Craft CMS</a> installation, created by <a href='https://www.village.one'>Village One</a>. Please check out the Readme in the project root or on Github for first steps."|t }}</p>
+  <p><a class="button" href="https://github.com/village-one/ptf-site/blob/main/README.md">{{ "Open Readme on GitHub"|t }}</a></p>
 {% endset %}
 
 {% block content %}
