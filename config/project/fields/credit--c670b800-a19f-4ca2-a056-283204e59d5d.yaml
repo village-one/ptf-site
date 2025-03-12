@@ -1,8 +1,8 @@
 columnSuffix: null
-handle: projectTeamMembers
+handle: credit
 instructions: null
-name: 'Project Team Members'
-searchable: false
+name: 'Credit / License'
+searchable: true
 settings:
   byteLimit: null
   charLimit: null

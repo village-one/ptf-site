@@ -1,4 +1,4 @@
-dateModified: 1741796024
+dateModified: 1741796282
 elementSources:
   craft\elements\Entry:
     -
@@ -92,6 +92,7 @@ meta:
     c0e7400b-5611-4a34-bc52-4cd0edc31e41: Sites # Sites
     c03eff61-59aa-491d-bfa0-db442637813a: Article # Article
     c8c2dcfa-75cb-423f-9565-b550807d0e7e: 'Resize: width 1500px' # Resize: width 1500px
+    c670b800-a19f-4ca2-a056-283204e59d5d: 'Credit / License' # Credit / License
     c63194ff-c47c-4c20-80b1-39bfedfc3b0f: 'Project Categories' # Project Categories
     c4438391-90e5-49b1-93bd-6fcbbd3aed62: Simple # Simple
     d5397ea9-1d37-4f12-bf41-46082d130bd8: Image # Image

@@ -52,5 +52,5 @@ settings:
   minRows: null
   staticRows: false
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Table
