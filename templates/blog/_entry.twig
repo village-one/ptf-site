@@ -23,7 +23,7 @@
 
 {% block content %}
   <article>
-    {% include "_rich-text/standard" with { text: "<h1>#{headline}</h1>" } only %}
+    {% include "_rich-text/standard" with { text: "<h1>#{ headline }</h1>" } only %}
     <p class="mt-2 mb-4">Written by {{authorName}} on {{ postDate }}</p>
 
     {% if hasImage %}

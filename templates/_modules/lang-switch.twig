@@ -1,0 +1,44 @@
+{% set currentElement = craft.app.urlManager.matchedElement %}
+{% set sites = craft.app.getSites().getGroupById(currentSite.groupId).getSites() %}
+{% set languageLinks = [] %}
+
+{% for site in sites|filter(site => site.baseUrl is not empty) %}
+  {% set url = site.getBaseUrl() %}
+  {% if currentElement %}
+    {% set otherLocaleElement = craft.app.getElements().getElementById(currentElement.id, currentElement.className(), site.id) %}
+    {% if otherLocaleElement and otherLocaleElement.enabledForSite %}
+      {% set url = otherLocaleElement.url %}
+    {% endif %}
+  {% else %}
+    {% set url = siteUrl('', '', 'https', site.id) %}
+  {% endif %}
+
+  {% set languageLinks = languageLinks|merge([{
+    url: url,
+    countryCode: site.language|split('-')|last|lower,
+    current: site.id == currentSite.id ? true : false,
+    language: site.language,
+    languageName: site.name
+  }]) %}
+{% endfor %}
+
+{% set labels = {
+  de: "Auf Deutsch",
+  en: "In English",
+} %}
+
+<div class="inline-flex gap-1">
+  {% for link in languageLinks %}
+    {% if link.current %}
+      <strong>
+    {% else %}
+      <a class="text-link" href="{{ link.url }}" tabindex="0">
+    {% endif %}
+      {{ labels[link.countryCode] }}
+    {% if link.current %}
+      </strong>
+    {% else %}
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

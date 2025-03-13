@@ -1,4 +1,4 @@
-dateModified: 1741622707
+dateModified: 1741804012
 elementSources:
   craft\elements\Entry:
     -
@@ -82,15 +82,18 @@ meta:
     504f909d-20af-4a66-b4a5-46c966689b30: 'Resize: width 1000px' # Resize: width 1000px
     645eb55b-61e5-4ed2-bf31-caed18a16ffb: 'Blog Index' # Blog Index
     3440d13a-36a4-4c7c-9db6-14ea4be7238f: Round # Round
+    53364b16-adc8-4b34-802f-054c272771c6: 'Projects Index' # Projects Index
     586087db-4dd7-43ba-929b-b3f7cef02ff8: 'Resize: width 0500px' # Resize: width 0500px
     711863fc-e341-4c43-b45b-dc33dc3c9c2b: Homepage # Homepage
     67373325-a234-485a-a635-26dee1e7f325: 'Project Links' # Project Links
+    af0bbe1c-3613-4775-8a01-965b68d4e56e: English # English
     af427185-4826-4e80-bd57-096797b92f4b: Project # Project
     b44bb4f4-87a6-47c4-ae20-f1594e9a775b: 'Blog Teaser' # Blog Teaser
     b99ee1fe-b466-49ac-8315-43d2af7587e1: Uploads # Uploads
     c0e7400b-5611-4a34-bc52-4cd0edc31e41: Sites # Sites
     c03eff61-59aa-491d-bfa0-db442637813a: Article # Article
     c8c2dcfa-75cb-423f-9565-b550807d0e7e: 'Resize: width 1500px' # Resize: width 1500px
+    c670b800-a19f-4ca2-a056-283204e59d5d: 'Credit / License' # Credit / License
     c63194ff-c47c-4c20-80b1-39bfedfc3b0f: 'Project Categories' # Project Categories
     c4438391-90e5-49b1-93bd-6fcbbd3aed62: Simple # Simple
     d5397ea9-1d37-4f12-bf41-46082d130bd8: Image # Image

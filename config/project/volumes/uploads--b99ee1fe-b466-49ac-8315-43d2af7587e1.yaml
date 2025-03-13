@@ -1,3 +1,5 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   1272fc47-fee0-4a8b-80d0-5c19ed9e14c6:
     tabs:
@@ -9,9 +11,11 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-02-19T09:40:13+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +24,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -35,14 +40,17 @@ fieldLayouts:
             attribute: alt
             class: null
             cols: null
+            dateAdded: '2025-02-19T09:40:13+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             instructions: null
             label: null
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: true
             required: false
@@ -54,6 +62,22 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-03-12T16:17:51+00:00'
+            elementCondition: null
+            fieldUid: c670b800-a19f-4ca2-a056-283204e59d5d # Credit / License
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: addce637-1162-4b04-9b41-f84a4e16ffab
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: b716d9f1-1e92-42c0-bf65-7e868c92a471
         userCondition: null
@@ -61,6 +85,7 @@ fs: uploadsFs
 handle: uploads
 name: Uploads
 sortOrder: 1
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: uploadsFs

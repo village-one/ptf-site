@@ -1,9 +1,10 @@
 {% extends "_layouts/layout.twig" %}
+{% set homepage = craft.entries.section("homepage").one() %}
 
 {% set text %}
-  <h1>404!</h1>
-  <p>Page not found</p>
-  <p><a class="button" href="{{ url("/") }}">Return to homepage</a></p>
+  <h1>{{ "404!"|t }}</h1>
+  <p>{{ "Page not found"|t }}</p>
+  <p><a class="button" href="{{ homepage.getUrl() }}">{{ "Return to homepage"|t }}</a></p>
 {% endset %}
 
 {% block content %}

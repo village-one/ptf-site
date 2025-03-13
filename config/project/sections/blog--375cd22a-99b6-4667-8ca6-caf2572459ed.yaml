@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - c03eff61-59aa-491d-bfa0-db442637813a # Article
+  -
+    uid: c03eff61-59aa-491d-bfa0-db442637813a # Article
 handle: blog
 maxAuthors: 1
 name: Blog
@@ -14,8 +15,16 @@ previewTargets:
       -
         - urlFormat
         - '{url}'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
+  af0bbe1c-3613-4775-8a01-965b68d4e56e: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: blog/_entry
+    uriFormat: 'blog/{slug}'
   ddc3aedf-983b-4fa7-81eb-69fd761d71af: # German
     enabledByDefault: true
     hasUrls: true

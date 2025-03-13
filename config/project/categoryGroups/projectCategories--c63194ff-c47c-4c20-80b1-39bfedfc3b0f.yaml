@@ -41,6 +41,10 @@ fieldLayouts:
 handle: projectCategories
 name: 'Project Categories'
 siteSettings:
+  af0bbe1c-3613-4775-8a01-965b68d4e56e: # English
+    hasUrls: true
+    template: project-categories/_category.twig
+    uriFormat: 'project-categories/{slug}'
   ddc3aedf-983b-4fa7-81eb-69fd761d71af: # German
     hasUrls: true
     template: project-categories/_category.twig
