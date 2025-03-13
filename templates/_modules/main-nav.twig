@@ -3,7 +3,7 @@
 {% set projectsIndex = craft.entries.section("projectsIndex").one() %}
 
 <header class="mb-4 md:mb-6 lg:mb-8">
-  <nav class="flex flex-col md:flex-row">
+  <nav class="flex flex-col gap-1 lg:flex-row lg:justify-between">
     <ul class="flex flex-row gap-2">
       <li>
         <a class="text-link" href="{{ homepage.getUrl() }}">{{ "Home"|t }}</a>
@@ -15,8 +15,11 @@
         <a class="text-link" href="{{ projectsIndex.getUrl() }}">{{ "Projects"|t }}</a>
       </li>
     </ul>
-    <display-toggle class="hidden md:ml-auto" data-light-mode-label="{{ "Switch to light mode"|t }}" data-dark-mode-label="{{ "Switch to dark mode"|t }}">
-      <button class="text-link"></button>
+    <div>
+      {% include "_modules/lang-switch.twig" %}
+    </div>
+    <display-toggle class="hidden" data-light-mode-label="{{ "Switch to light mode"|t }}" data-dark-mode-label="{{ "Switch to dark mode"|t }}">
+      <button class="inline-block text-link cursor-pointer"></button>
     </display-toggle>
   </nav>
 </header>
