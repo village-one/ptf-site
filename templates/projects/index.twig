@@ -4,12 +4,12 @@
 {% paginate projectsQuery as pagination, projects %}
 
 {% block content %}
-  {% include "_rich-text/standard" with { text: "<h1>#{ 'Our projects'|t }</h1>" } only %}
+  {% include "_rich-text/standard" with { text: "<h1>#{'Our projects'|t}</h1>" } only %}
   <div class="my-4">
     {% if projects|length %}
       {% include "projects/_modules/teasers-list" with { projects: projects } only %}
     {% else %}
-      {% include "_rich-text/standard" with { text: "<p>#{ 'No entries yet. Create some in the CMS!'|t }</p>" } only %}
+      {% include "_rich-text/standard" with { text: "<p>#{'No entries yet. Create some in the CMS!'|t}</p>" } only %}
     {% endif %}
   </div>
   {% include "_modules/pagination" with { pagination: pagination } only %}
