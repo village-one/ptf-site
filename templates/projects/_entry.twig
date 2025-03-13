@@ -19,28 +19,40 @@
 {% set links = entry.projectLinks %}
 {% set status = entry.projectStatus[0].label %}
 
+
 {% block content %}
   <article>
-    {% include "_rich-text/standard" with { text: "<em>{Project Status: #{status}</em>" } only %}
-    {% include "_rich-text/standard" with { text: "<em>Round: #{round}</em>" } only %}
+    <header class="mb-4">
+      {% include "_rich-text/standard" with { text: "<h1>#{headline}</h1>" } only %}
+      {% include "_rich-text/standard" with { text: "<p>#{claim}</p>" } only %}
+    </header>
 
-    {% for category in categories %}
-      <em>#{{ category }}</em>
-    {% endfor %}
+    {% include "_rich-text/standard" with { text: text } only %}
 
-    {% include "_rich-text/standard" with { text: "<h1>#{headline}</h1>" } only %}
-    {% include "_rich-text/standard" with { text: "<em>#{claim}</em>" } only %}
-    <p class="mt-2 mb-4">
-      <strong>Team Members:</strong>
-      {{teamMembers}}
-    </p>
+    <aside class="my-4">
+      <p>{{ "Project Status: {status}"|t({"status": status}) }}</p>
+      <p>{{ "Round: {round}"|t({"round": round}) }}</p>
+      <p>{{ categories|join(", ") }}</p>
+    </aside>
 
-    <p class="mt-2 mb-4">
-      <strong>Links:</strong>
-      {% for link in links %}
-        <a href={{link.linkURL}}>{{ link.name }}</a>
-      {% endfor %}
-    </p>
+    {% if teamMembers|length %}
+      <p class="my-4">
+        <strong>{{ "Team Members"|t }}:</strong> {{teamMembers}}
+      </p>
+    {% endif %}
+
+    {% if links|length %}
+      <p class="my-4">
+        <strong>{{ "Links"|t }}:</strong>
+        <ul class="list-disc">
+          {% for link in links %}
+            <li>
+              <a class="text-link" href={{link.linkURL}}>{{ link.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </p>
+    {% endif %}
 
     {% if hasImage %}
       <div class="my-4">
@@ -48,6 +60,5 @@
       </div>
     {% endif %}
 
-    {% include "_rich-text/standard" with { text: text } only %}
   </article>
 {% endblock %}
